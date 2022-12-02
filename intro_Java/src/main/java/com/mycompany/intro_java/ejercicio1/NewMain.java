@@ -17,16 +17,42 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int minutos, dias, horas, minutos1;
-        System.out.println("ingrese la cantidad de minutos");
-        System.out.println();
-        Scanner leer = new Scanner(System.in);
-        minutos=leer.nextInt();
-        System.out.println("los minutos son "+minutos);
-        dias=(minutos/60)/24;
-        horas=(minutos-((dias*60)*24))/60;
-        minutos1=(minutos-((horas*60))-((dias*60)*24));
-        System.out.println("los dias son "+dias+" las horas son "+horas+" los minutos son "+minutos1);
+        
+        int nota;
+System.out.println("Ingresa una nota");
+Scanner leer=new Scanner(System.in);
+nota=leer.nextInt();
+
+While((nota<0)&&(nota>10)) {
+System.out.println("Ingresa una nota");
+Scanner leer=new Scanner(System.in);
+nota=leer.nextInt();
+        System.out.println("La nota es INCORRECTA");
+    }
+System.out.println("La nota es CORRECTA");
+
+
+//Opción 2
+int control;
+int=0
+
+While(int=0) {
+System.out.println("Ingresa una nota");
+Scanner leer=new Scanner(System.in);
+nota=leer.nextInt();
+if ((nota<10)&&(nota>10))
+        System.out.println("La nota es INCORRECTA");
+    }
+    else{
+    System.out.println("La nota es CORRECTA");
+    int=1;
+    }
+
+
+   }  
+
+}
+
     }
     
 }
