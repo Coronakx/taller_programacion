@@ -18,18 +18,19 @@ public class NewMain {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        int nota;
-System.out.println("Ingresa una nota");
-Scanner leer=new Scanner(System.in);
-nota=leer.nextInt();
+        
+    System.out.println("Ingresa una nota");
+    Scanner leer=new Scanner(System.in);
+    nota=leer.nextDouble();
 
-While((nota<0)&&(nota>10)) {
-System.out.println("Ingresa una nota");
-Scanner leer=new Scanner(System.in);
-nota=leer.nextInt();
-        System.out.println("La nota es INCORRECTA");
+    While((nota<0)||(nota>10)) {
+    System.out.println("La nota es INCORRECTA");
+    System.out.println("Ingresa una nota");
+    nota=leer.nextDouble();
     }
-System.out.println("La nota es CORRECTA");
+    if (nota>10){
+        System.out.println("La nota es CORRECTA");
+    }
 
 
 //Opción 2
