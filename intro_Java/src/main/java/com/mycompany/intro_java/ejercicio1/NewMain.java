@@ -29,7 +29,7 @@ public class NewMain {
     System.out.println("Ingresa una nota");
     nota=leer.nextDouble();
     }
-    if (nota>10){
+    if ((nota>=0)||(nota<=10){
         System.out.println("La nota es CORRECTA");
     }
 
