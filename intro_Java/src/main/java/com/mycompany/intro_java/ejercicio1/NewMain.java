@@ -17,7 +17,8 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+     
+    double nota;
         
     System.out.println("Ingresa una nota");
     Scanner leer=new Scanner(System.in);
@@ -35,18 +36,18 @@ public class NewMain {
 
 //Opción 2
 int control;
-int=0
+control=0;
 
 While(int=0) {
 System.out.println("Ingresa una nota");
 Scanner leer=new Scanner(System.in);
 nota=leer.nextInt();
-if ((nota<10)&&(nota>10))
+if ((nota<10)||(nota>10))
         System.out.println("La nota es INCORRECTA");
     }
     else{
     System.out.println("La nota es CORRECTA");
-    int=1;
+    control=1;
     }
 
 
