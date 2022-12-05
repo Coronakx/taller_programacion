@@ -24,19 +24,12 @@ public class NewMain {
     for (int i=1; i<=20; i++) {
         system.out.println("Ingresa un número diferente de cero");
         num = leer.nextInt();
+        if (num>0); {
+            suma=suma+numero;
+        }
         if (num==0) {
             break;
         }
-        else {
-            if num(<0) {
-                continue;
-            }
-        else{
-    suma=suma+num;
-        }
-    }
-
-    } 
 
     system.out.println("La suma de los números es: "+suma);
 
