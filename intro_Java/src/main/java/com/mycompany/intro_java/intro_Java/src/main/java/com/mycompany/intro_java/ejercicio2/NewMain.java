@@ -17,6 +17,7 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+ 
         //Ejercicio 15
            Scanner leer = new Scanner(system.in);
     int num, suma;
@@ -42,3 +43,4 @@ public class NewMain {
     }
     
 }
+
