@@ -17,14 +17,32 @@ public class NewMain {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int num1, num2, suma;
-        System.out.println("Ingrese el primer número: ");
-        Scanner leer = new Scanner(System.in);
-        num1=leer.nextInt();
-        System.out.println("Ingrese el segundo número: ");
-        num2=leer.nextInt();
-        suma=num1+num2;
-        System.out.println("Elresultado de la suma es "+suma);
+        //Ejercicio 15
+           Scanner leer = new Scanner(system.in);
+    int num, suma;
+    suma=0;
+    for (int i=1; i<=20; i++) {
+        system.out.println("Ingresa un número diferente de cero");
+        num = leer.nextInt();
+        if (num==0) {
+            break;
+        }
+        else {
+            if num(<0) {
+                continue;
+            }
+        else{
+    suma=suma+num;
+        }
+    }
+
+    } 
+
+    system.out.println("La suma de los números es: "+suma);
+
+    }
+    
+}
         
          
         
