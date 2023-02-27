@@ -1,78 +1,112 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
-*{
-	font-family: 'Poppins', sans-serif;
+div{
+  width:100px;
+  heigth:100px;
+  background:#4A88F4;
+  color:#fff;
+  font-size:30px;
 }
-body{
-	background: lightblue;
-	width:100%;
+.caja2{
+  position:absolute;
+  top:0;
+  bottom:;
+  rigth:;
+  margin-left:200px;
+  background:orange;
 }
-.container{
-	width: 90%;
-	background: #fff;
-	display: flex;
-	justify-content: center;
-	/*box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);*/
+.caja_padre{
+	background:black;
+	width:300px;
+	height:300px;
+	margin-left:300px;
+	margin-top:-100px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.caja3{
+	align-items:center;
+	height:100px;
+	flex-wrap:wrap;
+	margin-top:30%;
+}
+.caja4{
+  position:fixed;
+  top:20px;
+  bottom:;
+  rigth:;
+  left:700px;
+  background:red;
+}
+  .caja5{
+  position:sticky;
+  top:50px;
+  bottom:10px;
+  rigth:;
+  left:900px;
+  background:green;
 }
 
-.leftSide{
-	align-items: flex-start;
+.float-text{
+	width:800px;
+	background:#fff;
+	color:black;
+	font-size:20px;
+	margin-top:100px;
+}
+img{
+	width:300px;
+	heigth:450px;
+	float:left;/*la imagen se flora a la izquierda y los párrafos quedan a la derecha de la misma rodeándola*/
+}
+.clear{
+	clear:both;/*se limpia o anula el float en el párrafo al que le colocamos la clase "clear" y ya no se coloca a la derecha de la imagen, sino que ocupa su posicin original a la extrema izquierda*/
+}
+
+.zindex{
+	width:200px;
+	height:100px;
+	position:relative;
+	padding:50px;
+	font-size:30px;
 	
-	width:40%;
-	background: #003147;
-	margin-right: 5%;
-	margin-left: 5%;
 }
-/*.leftSide>h2, p{
-	align-items: left;
-	border-bottom: 1px solid rgba(255, 2555, 2555, 0.2);
-	margin-left: 5%;
-	margin-right:5%;	
-}*/
-.leftSide>img{
-	align-items: center;
-	width: 90px;
-	height: 90px;
-	border-radius: 75%;
-	margin-left: 30%;
-	margin-top:5%;
+#a{
+	background:blue;
+	top:50px;
+	left:50px;
+	z-index:3;
 }
-.leftSide>section{
-	align-items: center;
-	margin-left: 5%;
-	margin-right: 5%;;
+#b{
+	background:green;
+	top:10px;
+	left:100px;
+	z-index:2;
 }
-/*.profileText .foto img{
-	position:absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}*/
-/*.profileText h2{
-	color: #fff;
-	font-size: 1.5em;
-	margin-top: 20px;
-	text-align: center;
-	font-weight: 600;
-	line-height: 1.4em;
-}*/
-/*.profileText>h2>span{
-	font-weight: 300;
-	font-size: 0.7em;
-}*/
-.rightSide {
-	align-items: flex-end;
-	width:80%;
-	background-color: #fff;
-	margin-left: 5%;
-	margin-right: 0%;
+#c{
+	background:orange;
+	top:-50px;
+	left:150px;
+	z-index:1;
 }
-.foot{
-	align-items: center;
+
+.flotantes{
+	width:700px; /*con 600px se juntan porque es la suma de las 6 cajas de 100px cada una ---con menos de 600px las cajas se van acomodando hacia abajo, pero el div que las contiene .flotantes debe tener la altura sufuciente para que puedan caber y no se encimen con las cajas a, b, c de abajo*/
+	height:100px;
+	border:black dotted;
+	background:yellow;
+		display:flex;
+	justify-content:space-around;
+	flex-direction:row-reverse;
 }
-footer>a>img{
-	width:10%;
-	margin-left: 5%;
+.floatleft{
+	float:left;
 }
+.floatright{
+	align-items:top;
+	background:brown;
+	
+}
+
+
+
