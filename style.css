@@ -1,0 +1,112 @@
+
+div{
+  width:100px;
+  heigth:100px;
+  background:#4A88F4;
+  color:#fff;
+  font-size:30px;
+}
+.caja2{
+  position:absolute;
+  top:0;
+  bottom:;
+  rigth:;
+  margin-left:200px;
+  background:orange;
+}
+.caja_padre{
+	background:black;
+	width:300px;
+	height:300px;
+	margin-left:300px;
+	margin-top:-100px;
+	display:flex;
+	justify-content:center;
+	flex-wrap:wrap;
+}
+.caja3{
+	align-items:center;
+	height:100px;
+	flex-wrap:wrap;
+	margin-top:30%;
+}
+.caja4{
+  position:fixed;
+  top:20px;
+  bottom:;
+  rigth:;
+  left:700px;
+  background:red;
+}
+  .caja5{
+  position:sticky;
+  top:50px;
+  bottom:10px;
+  rigth:;
+  left:900px;
+  background:green;
+}
+
+.float-text{
+	width:800px;
+	background:#fff;
+	color:black;
+	font-size:20px;
+	margin-top:100px;
+}
+img{
+	width:300px;
+	heigth:450px;
+	float:left;/*la imagen se flora a la izquierda y los párrafos quedan a la derecha de la misma rodeándola*/
+}
+.clear{
+	clear:both;/*se limpia o anula el float en el párrafo al que le colocamos la clase "clear" y ya no se coloca a la derecha de la imagen, sino que ocupa su posicin original a la extrema izquierda*/
+}
+
+.zindex{
+	width:200px;
+	height:100px;
+	position:relative;
+	padding:50px;
+	font-size:30px;
+	
+}
+#a{
+	background:blue;
+	top:50px;
+	left:50px;
+	z-index:3;
+}
+#b{
+	background:green;
+	top:10px;
+	left:100px;
+	z-index:2;
+}
+#c{
+	background:orange;
+	top:-50px;
+	left:150px;
+	z-index:1;
+}
+
+.flotantes{
+	width:700px; /*con 600px se juntan porque es la suma de las 6 cajas de 100px cada una ---con menos de 600px las cajas se van acomodando hacia abajo, pero el div que las contiene .flotantes debe tener la altura sufuciente para que puedan caber y no se encimen con las cajas a, b, c de abajo*/
+	height:100px;
+	border:black dotted;
+	background:yellow;
+		display:flex;
+	justify-content:space-around;
+	flex-direction:row-reverse;
+}
+.floatleft{
+	float:left;
+}
+.floatright{
+	align-items:top;
+	background:brown;
+	
+}
+
+
+
